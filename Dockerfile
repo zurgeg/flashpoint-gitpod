@@ -14,8 +14,10 @@ RUN sudo apt install -y php libapache2-mod-php
 
 RUN sudo apt-get install -y p7zip p7zip-full
 
-RUN wget https://bluepload.unstable.life/selif/flashpoint81infinitylinux.7z
+RUN wget https://bluepload.unstable.life/flashpoint-infinity-8-2-2-amd64-deb.7z
 
-RUN 7z x -so flashpoint81infinitylinux.7z "-o/workspace/flashpoint-gitpod/flashpoint"
+RUN 7z x flashpoint-infinity-8-2-2-amd64-deb.7z "-o/tmp/fp"
+
+RUn sudo apt install /tmp/fp/flashpoint-infinity_8.2-2_amd64.deb
 
 
