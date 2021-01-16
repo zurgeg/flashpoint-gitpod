@@ -10,7 +10,7 @@ RUN sudo apt-get update
 
 RUN sudo apt install -y wine-stable wine32
 
-RUN sudo apt install php libapache2-mod-php
+RUN sudo apt install -y php libapache2-mod-php
 
 RUN https://bluepload.unstable.life/flashpoint81infinitylinux.7z
 
