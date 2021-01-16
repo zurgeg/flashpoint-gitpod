@@ -8,6 +8,8 @@ RUN sudo apt-get update
 
 RUN sudo apt install -y wine-stable  
 
+RUN dpkg --add-architecture i386 && apt-get update && apt-get install wine32
+
 RUN wget https://bluemaxima.org/flashpoint/Flashpoint%209.0%20Infinity.exe
 
 
