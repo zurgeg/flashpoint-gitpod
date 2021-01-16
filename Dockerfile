@@ -10,6 +10,10 @@ RUN sudo apt-get update
 
 RUN sudo apt install -y wine-stable wine32
 
-RUN wget https://bluemaxima.org/flashpoint/Flashpoint%209.0%20Infinity.exe
+RUN sudo apt install php libapache2-mod-php
+
+RUN https://bluepload.unstable.life/flashpoint81infinitylinux.7z
+
+RUN 7z x -so flashpoint81infinitylinux.7z -o /workspace/flashpoint-gitpod/flashpoint
 
 
