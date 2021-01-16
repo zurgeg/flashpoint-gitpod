@@ -1,5 +1,8 @@
-  
 FROM gitpod/workspace-full-vnc
+
+RUN wget -nc https://dl.winehq.org/wine-builds/winehq.key
+
+RUN sudo apt-key add winehq.key
 
 RUN sudo apt install --install-recommends winehq-stable
 
