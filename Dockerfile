@@ -8,7 +8,7 @@ RUN sudo apt-get update
 
 RUN sudo apt install -y wine-stable  
 
-RUN sudo dpkg --add-architecture i386 && sudo apt-get install winelib -y
+RUN sudo dpkg --add-architecture i386
 
 RUN wget https://bluemaxima.org/flashpoint/Flashpoint%209.0%20Infinity.exe
 
